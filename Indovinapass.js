@@ -3,10 +3,8 @@ let passKey = "segreto"
 let div = document.createElement("div")
 let div1 = document.createElement("div1")
 let div3 = document.createElement("div3")
-let pass
-function valore(pass) {
-    do  { let indovina = pass
-
+    do  { let indovina =document.getElementById(pass)
+        console.log(pass)
 
         if (indovina === passKey) {
             div.innerHTML=("Puoi entrare!")
@@ -28,4 +26,4 @@ function valore(pass) {
         if (tentativo === 3 )
         div3.innerHTML=(`La pass era ${passKey}, hai finito i tentativi `)
         document.body.appendChild(div3)
-}
+
